@@ -1,0 +1,16 @@
+insert into address (id,country,city,district,street,description) values (1,'Egypt','Cairo','Nasr City','10th','description');
+insert into address (id,country,city,district,street,description) values (2,'Moroco','Moroco','Moroco','main street','description');
+insert into Branch (id,name,address) values (1,'branch1',1);
+insert into Branch (id,name,address) values (2,'branch2',2);
+insert into Vaccine (id,name,description) values (1,'vaccine1','vaccine 1 description');
+insert into Vaccine (id,name,description) values (2,'vaccine2','vaccine 2 description');
+insert into Branch_Vaccine (branch_Id,vaccine_Id,available_Count) values (1,1,5);
+insert into Branch_Vaccine (branch_Id,vaccine_Id,available_Count) values (1,2,9);
+insert into Branch_Vaccine (branch_Id,vaccine_Id,available_Count) values (2,1,13);
+insert into citizen (id,email,name,national_id)values(1,'amr@gamilc','amr','24884');
+insert into vaccination (id,payment_method,status,time_slot,branch,citizen,vaccine) values (1, 'CASH','REQUESTED','2021-02-02 10:00:00',1,1,1);
+insert into vaccination (id,payment_method,status,time_slot,branch,citizen,vaccine) values (2, 'CASH','REQUESTED','2021-04-01 10:30:00',1,1,1);
+insert into vaccination (id,payment_method,status,time_slot,branch,citizen,vaccine) values (3, 'CASH','APPLIED','2021-01-01 10:00:00',1,1,1);
+insert into vaccination (id,payment_method,status,time_slot,branch,citizen,vaccine) values (4, 'CASH','APPLIED','2021-01-02 10:00:00',1,1,1);
+insert into vaccination (id,payment_method,status,time_slot,branch,citizen,vaccine) values (5, 'CASH','APPLIED','2021-01-02 10:00:00',2,1,1);
+insert into vaccination (id,payment_method,status,time_slot,branch,citizen,vaccine) values (6, 'CASH','CONFIRMED','2021-01-02 10:30:00',2,1,1);

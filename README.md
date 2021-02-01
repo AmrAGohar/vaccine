@@ -1,1 +1,1 @@
-# vaccine
+to run the application : use the command --> mvn spring-boot:run
